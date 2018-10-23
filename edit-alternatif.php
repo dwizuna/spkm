@@ -203,6 +203,91 @@
 											?>
 											</select>
                                         </div>
+										<div class="form-group">
+                                            <label for="k6"><?php echo $k[5];?></label>
+                                            <select class="form-control" name="k6" id="k6">
+											<?php 
+												$subkriteria = $mysqli->query("select * from sub_kriteria where id_kriteria = 6 order by skor");
+												if(!$kriteria){
+													echo $mysqli->connect_errno." - ".$mysqli->connect_error;
+													exit();
+												}
+												while ($row = $subkriteria->fetch_assoc()) {
+											?>
+												<option value='<?php echo $row["skor"];?>' <?php if($alt["k6"]==$row["skor"]) echo "selected"?>><?php echo $row["sub_kriteria"];?></option>
+										    <?php
+												}
+											?>
+											</select>
+                                        </div>
+										<div class="form-group">
+                                            <label for="k7"><?php echo $k[6];?></label>
+                                            <select class="form-control" name="k7" id="k7">
+											<?php 
+												$subkriteria = $mysqli->query("select * from sub_kriteria where id_kriteria = 7 order by skor");
+												if(!$kriteria){
+													echo $mysqli->connect_errno." - ".$mysqli->connect_error;
+													exit();
+												}
+												while ($row = $subkriteria->fetch_assoc()) {
+											?>
+												<option value='<?php echo $row["skor"];?>' <?php if($alt["k7"]==$row["skor"]) echo "selected"?>><?php echo $row["sub_kriteria"];?></option>
+										    <?php
+												}
+											?>
+											</select>
+                                        </div>
+										<div class="form-group">
+                                            <label for="k8"><?php echo $k[7];?></label>
+                                            <select class="form-control" name="k8" id="k8">
+											<?php 
+												$subkriteria = $mysqli->query("select * from sub_kriteria where id_kriteria = 8 order by skor");
+												if(!$kriteria){
+													echo $mysqli->connect_errno." - ".$mysqli->connect_error;
+													exit();
+												}
+												while ($row = $subkriteria->fetch_assoc()) {
+											?>
+												<option value='<?php echo $row["skor"];?>' <?php if($alt["k8"]==$row["skor"]) echo "selected"?>><?php echo $row["sub_kriteria"];?></option>
+										    <?php
+												}
+											?>
+											</select>
+                                        </div>
+										<div class="form-group">
+                                            <label for="k9"><?php echo $k[8];?></label>
+                                            <select class="form-control" name="k9" id="k9">
+											<?php 
+												$subkriteria = $mysqli->query("select * from sub_kriteria where id_kriteria = 9 order by skor");
+												if(!$kriteria){
+													echo $mysqli->connect_errno." - ".$mysqli->connect_error;
+													exit();
+												}
+												while ($row = $subkriteria->fetch_assoc()) {
+											?>
+												<option value='<?php echo $row["skor"];?>' <?php if($alt["k9"]==$row["skor"]) echo "selected"?>><?php echo $row["sub_kriteria"];?></option>
+										    <?php
+												}
+											?>
+											</select>
+                                        </div>
+										<div class="form-group">
+                                            <label for="k10"><?php echo $k[9];?></label>
+                                            <select class="form-control" name="k10" id="k10">
+											<?php 
+												$subkriteria = $mysqli->query("select * from sub_kriteria where id_kriteria = 10 order by skor");
+												if(!$kriteria){
+													echo $mysqli->connect_errno." - ".$mysqli->connect_error;
+													exit();
+												}
+												while ($row = $subkriteria->fetch_assoc()) {
+											?>
+												<option value='<?php echo $row["skor"];?>' <?php if($alt["k10"]==$row["skor"]) echo "selected"?>><?php echo $row["sub_kriteria"];?></option>
+										    <?php
+												}
+											?>
+											</select>
+                                        </div>
                                     </div><!-- /.box-body -->
 
                                     <div class="box-footer">

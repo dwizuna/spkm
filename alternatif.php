@@ -110,6 +110,11 @@
 					<th>K3</th>
 					<th>K4</th>
 					<th>K5</th>
+					<th>K6</th>
+					<th>K7</th>
+					<th>K8</th>
+					<th>K9</th>
+					<th>K10</th>
 					<th>Opsi</th>
 				</tr>
 			</thead>
@@ -125,6 +130,11 @@
 					<th>K3</th>
 					<th>K4</th>
 					<th>K5</th>
+					<th>K6</th>
+					<th>K7</th>
+					<th>K8</th>
+					<th>K9</th>
+					<th>K10</th>
 					<th>Opsi</th>
 				</tr>
 			</tfoot>
@@ -143,6 +153,11 @@
 													echo '<td>'.$row["k3"].'</td>';
 													echo '<td>'.$row["k4"].'</td>';
 													echo '<td>'.$row["k5"].'</td>';
+													echo '<td>'.$row["k6"].'</td>';
+													echo '<td>'.$row["k7"].'</td>';
+													echo '<td>'.$row["k8"].'</td>';
+													echo '<td>'.$row["k9"].'</td>';
+													echo '<td>'.$row["k10"].'</td>';
 													echo '<td><!--a href="#"><i class="fa fa-search"></i></a-->';
 													?>
 														  <a href="edit-alternatif.php?id=<?php echo $row['id_alternatif'];?>" class="btn btn-primary btn-sm"><i class="fa fa-pencil"></i> Edit</a>
