@@ -321,6 +321,11 @@
 												@$alt[$i][2] = $row["k3"];
 												@$alt[$i][3] = $row["k4"];
 												@$alt[$i][4] = $row["k5"];
+												@$alt[$i][5] = $row["k6"];
+												@$alt[$i][6] = $row["k7"];
+												@$alt[$i][7] = $row["k8"];
+												@$alt[$i][8] = $row["k9"];
+												@$alt[$i][9] = $row["k10"];
 												$i++;
 											}
 											return $alt;
